@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomColor from '../../randomColor/randomColor.jsx';
+import RandomColor from '../../container/randomColor.jsx';
 
 export default function App() {
   return <RandomColor />;
