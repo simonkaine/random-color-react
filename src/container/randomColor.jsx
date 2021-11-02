@@ -11,10 +11,9 @@ class RandomColor extends Component {
         // call the random function here, store in a variable to pass into the setState function
             const colors = ['blue', 'green', 'purple', 'red'];
             const randomizeColor = Math.floor(Math.random() * colors.length)
-            console.log(randomizeColor);
         this.setState({
         // key value. property in state(current color) then value (variable)
-            currentColor: this.state.randomizeColor
+            currentColor: colors[randomizeColor]
         });
         }, 1000);
     }
@@ -24,7 +23,6 @@ class RandomColor extends Component {
       };
 
     render() { 
-        
         const { currentColor } = this.state;
 
         return (
